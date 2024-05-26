@@ -1,0 +1,85 @@
+/* Style untuk navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style untuk container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    color: #333;
+  }
+  
+  .container p {
+    color: #666;
+  }
+  
+  .container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #mapid {
+    height: 500px; /* Ubah tinggi sesuai kebutuhan */
+    width: 100%;
+}
+
+/* Style untuk judul halaman */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style untuk memberi padding di sekitar kontainer peta */
+body {
+    padding: 20px;
+    margin: 0;
+}
+/* ini game tetris */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+h1 {
+  color: #333;
+}
+canvas {
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%; /* Maksimum lebar gambar adalah lebar layar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi */
+  display: block; /* Agar gambar ditampilkan dalam satu baris */
+  margin: 0 auto; /* Posisikan gambar di tengah-tengah */
+}

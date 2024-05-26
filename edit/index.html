@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="style/styles.css">
+</head>
+<body>
+<h1 align="center">SISTEM INFORMASI A</h1>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="inputnegara.php">Area Negara</a>
+    <a href="inputprov.php">Area Provinsi</a>
+    <a href="inputkabkota.php">Area Kabupaten / Kota</a>
+    <a href="inputkeca.php">Area Kecamatan</a>
+    <a href="inputkelu.php">Area Kelurahan</a>
+    <a href="input.php">Hasil Input</a>
+</div>
+
+<img src="images/pdi.jpg">
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<h1 align="center">PENGINPUTAN TUGAS SIA</h1>
+<div class="navbar">
+    <a href="index.php" class="active">Home</a>
+    <a href="negara.html">Area Negara</a>
+    <a href="provinsi.html">Area Provinsi</a>
+    <a href="kabkot.html">Area Kabupaten / Kota</a>
+    <a href="kecamatan.html">Area Kecamatan</a>
+    <a href="kelurahan.html">Area Kelurahan</a>
+</div>
+
+<?php
+// Koneksi ke database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sia";
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+// Mendapatkan data dari database
+$sql = "SELECT * FROM nama_tabel"; // Ganti "nama_tabel" dengan nama tabel sesuai dengan database Anda
+$result = $conn->query($sql);
+
+// Menampilkan data
+if ($result->num_rows > 0) {
+    echo "<div class='data-container'>";
+    echo "<h2>Data yang Telah Dimasukkan:</h2>";
+    echo "<ul>";
+    while($row = $result->fetch_assoc()) {
+        echo "<li>" . $row["kolom_satu"]. " - " . $row["kolom_dua"]. "</li>"; // Ganti "kolom_satu" dan "kolom_dua" dengan nama kolom sesuai dengan tabel Anda
+    }
+    echo "</ul>";
+    echo "</div>";
+} else {
+    echo "Tidak ada data yang ditemukan";
+}
+$conn->close();
+?>
+</body>
+</html> -->
